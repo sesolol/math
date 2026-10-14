@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore gym membership costs through linear relationships, equations, and interactive graphing.">
+  <title>Flex Fitness | Train Smart</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home">
+      <span class="brand-icon">F</span>
+      FLEX FITNESS
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="#plans">Memberships</a>
+      <a href="#calculator">Calculator</a>
+      <a href="#graph">Math Lab</a>
+      <a href="#quiz">Quiz</a>
+    </nav>
+
+    <a class="nav-cta" href="#plans">Explore plans ↗</a>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span> YOUR NEW JOURNEY STARTS HERE</span>
+        <h1>Stronger every day.<br><span>Smarter every second.</span></h1>
+        <p>
+          Find your perfect membership, explore your costs, and discover
+          the mathematics behind your fitness journey.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#plans">Find your membership ↗</a>
+          <a class="text-link" href="#graph">Explore the math ↓</a>
+        </div>
+        <div class="hero-note">
+          <span>✓ Flexible plans</span>
+          <span>✓ Transparent pricing</span>
+          <span>✓ Math made simple</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-top">
+          <span>YOUR POTENTIAL</span>
+          <span class="live-dot">● LIVE</span>
+        </div>
+        <div class="hero-stat">100<span>%</span></div>
+        <p>Commitment starts with a single step.</p>
+        <div class="mini-bars" aria-hidden="true">
+          <span style="height: 28%"></span>
+          <span style="height: 40%"></span>
+          <span style="height: 35%"></span>
+          <span style="height: 58%"></span>
+          <span style="height: 49%"></span>
+          <span style="height: 72%"></span>
+          <span style="height: 65%"></span>
+          <span style="height: 88%"></span>
+          <span style="height: 100%"></span>
+        </div>
+        <div class="hero-card-bottom">
+          <span>PROGRESS IS PERSONAL</span>
+          <span>01 / 04</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <span>TRAIN WITH PURPOSE</span>
+      <span>PRICING WITH CLARITY</span>
+      <span>PROGRESS THAT ADDS UP</span>
+    </section>
+
+    <section class="section" id="plans">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">MEMBERSHIP OPTIONS</span>
+          <h2>Find your fit.</h2>
+        </div>
+        <p>Three plans. Different costs.<br>One smarter decision.</p>
+      </div>
+
+      <div class="plans-grid">
+        <article class="plan-card">
+          <span class="plan-number">01 / STARTER</span>
+          <h3>Starter</h3>
+          <p class="plan-description">A simple way to begin.</p>
+          <div class="price">$15<span> / month</span></div>
+          <p class="fee">+$20 one-time signup fee</p>
+          <div class="plan-divider"></div>
+          <p class="plan-math">Total cost</p>
+          <p class="equation">y = 15x + 20</p>
+          <button class="button button-outline choose-plan"
+            data-plan="starter">Calculate Starter ↗</button>
+        </article>
+
+        <article class="plan-card featured">
+          <span class="plan-badge">NO SIGNUP FEE</span>
+          <span class="plan-number">02 / UNLIMITED</span>
+          <h3>Unlimited</h3>
+          <p class="plan-description">Straightforward monthly pricing.</p>
+          <div class="price">$25<span> / month</span></div>
+          <p class="fee">No signup fee</p>
+          <div class="plan-divider"></div>
+          <p class="plan-math">Total cost</p>
+          <p class="equation">y = 25x</p>
+          <button class="button button-dark choose-plan"
+            data-plan="unlimited">Calculate Unlimited ↗</button>
+        </article>
+
+        <article class="plan-card">
+          <span class="plan-number">03 / FLEX PLUS</span>
+          <h3>Flex Plus</h3>
+          <p class="plan-description">A lower monthly rate.</p>
+          <div class="price">$10<span> / month</span></div>
+          <p class="fee">+$50 one-time signup fee</p>
+          <div class="plan-divider"></div>
+          <p class="plan-math">Total cost</p>
+          <p class="equation">y = 10x + 50</p>
+          <button class="button button-outline choose-plan"
+            data-plan="plus">Calculate Flex Plus ↗</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="math-intro">
+      <div class="section math-intro-inner">
+        <div>
+          <span class="eyebrow">THE MATH BEHIND YOUR MEMBERSHIP</span>
+          <h2>Every price tells<br>a story.</h2>
+          <p>
+            As the months pass, your total cost changes.
+            Equations and graphs help us understand exactly how.
+          </p>
+        </div>
+        <div class="formula-card">
+          <span>THE LINEAR EQUATION</span>
+          <div class="big-equation">y = mx + b</div>
+          <div class="formula-key">
+            <p><strong>y</strong> — Total membership cost</p>
+            <p><strong>x</strong> — Number of months</p>
+            <p><strong>m</strong> — Monthly fee (slope)</p>
+            <p><strong>b</strong> — Signup fee (y-intercept)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="calculator">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">INTERACTIVE TOOL 01</span>
+          <h2>Calculate your commitment.</h2>
+        </div>
+        <p>Adjust your membership duration<br>to see how the price adds up.</p>
+      </div>
+
+      <div class="calculator-layout">
+        <div class="calculator-panel">
+          <label for="plan-select">Choose a membership</label>
+          <select id="plan-select">
+            <option value="starter">Starter — $15/month + $20 signup</option>
+            <option value="unlimited">Unlimited — $25/month, no signup</option>
+            <option value="plus">Flex Plus — $10/month + $50 signup</option>
+          </select>
+
+          <div class="slider-heading">
+            <label for="months">Membership duration</label>
+            <span><strong id="months-value">6</strong> months</span>
+          </div>
+          <input type="range" id="months" min="0" max="12" value="6"
+            step="1">
+          <div class="slider-labels">
+            <span>0 months</span><span>12 months</span>
+          </div>
+
+          <div class="calculation-box">
+            <span>YOUR EQUATION</span>
+            <div class="equation" id="active-equation">y = 15x + 20</div>
+            <p id="substitution">y = 15(6) + 20</p>
+          </div>
+        </div>
+
+        <div class="result-panel">
+          <span class="result-label">TOTAL MEMBERSHIP COST</span>
+          <div class="total-price" id="total-cost">$110</div>
+          <p id="cost-explanation">6 months of Starter membership.</p>
+          <div class="result-divider"></div>
+          <div class="result-row">
+            <span>Monthly fees</span>
+            <strong id="monthly-total">$90</strong>
+          </div>
+          <div class="result-row">
+            <span>Signup fee</span>
+            <strong id="signup-total">$20</strong>
+          </div>
+          <div class="result-row">
+            <span>Cost per month on average</span>
+            <strong id="average-cost">$18.33</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section graph-section" id="graph">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">INTERACTIVE TOOL 02</span>
+          <h2>See the relationship.</h2>
+        </div>
+        <p>Compare how each membership's<br>total cost changes over time.</p>
+      </div>
+
+      <div class="graph-card">
+        <div class="graph-toolbar">
+          <div>
+            <h3>Membership cost comparison</h3>
+            <p>Months of membership vs. total cost</p>
+          </div>
+          <button class="button button-outline" id="reset-graph">Reset graph</button>
+        </div>
+
+        <div class="graph-legend">
+          <span><i class="legend-dot starter-color"></i> Starter</span>
+          <span><i class="legend-dot unlimited-color"></i> Unlimited</span>
+          <span><i class="legend-dot plus-color"></i> Flex Plus</span>
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="cost-graph" role="img"
+            aria-label="Line graph comparing total costs for three gym memberships over twelve months.">
+            Your browser does not support canvas.
+          </canvas>
+        </div>
+        <p class="graph-note">
+          The horizontal axis represents months (x); the vertical axis
+          represents total cost in dollars (y).
+        </p>
+      </div>
+
+      <div class="concept-grid">
+        <article class="concept-card">
+          <span class="concept-symbol">m</span>
+          <h3>Slope</h3>
+          <p>The slope is the amount the total cost increases each month.
+            A steeper line means a higher monthly fee.</p>
+        </article>
+        <article class="concept-card">
+          <span class="concept-symbol">b</span>
+          <h3>Y-intercept</h3>
+          <p>The y-intercept is the cost at month zero.
+            It represents the initial signup fee.</p>
+        </article>
+        <article class="concept-card">
+          <span class="concept-symbol">0,0</span>
+          <h3>Direct variation</h3>
+          <p>An equation of the form y = kx passes through the origin.
+            With no signup fee, total cost is proportional to time.</p>
+        </article>
+      </div>
+
+      <div class="example-table-wrap">
+        <h3>Explore the values</h3>
+        <p>See the exact coordinates used to describe each relationship.</p>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>Months (x)</th>
+                <th>Starter (y)</th>
+                <th>Unlimited (y)</th>
+                <th>Flex Plus (y)</th>
+              </tr>
+            </thead>
+            <tbody id="values-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="quiz-section" id="quiz">
+      <div class="section quiz-inner">
+        <div class="quiz-heading">
+          <span class="eyebrow">KNOWLEDGE CHECK</span>
+          <h2>Put your math to work.</h2>
+          <p>Four questions. Instant feedback. See what you've learned.</p>
+        </div>
+
+        <div class="quiz-card">
+          <div class="quiz-top">
+            <span id="quiz-progress">QUESTION 1 OF 4</span>
+            <span id="quiz-score">SCORE: 0</span>
+          </div>
+          <div class="quiz-progress-track">
+            <div id="quiz-progress-bar"></div>
+          </div>
+          <h3 id="quiz-question"></h3>
+          <div id="quiz-answers"></div>
+          <p id="quiz-feedback" aria-live="polite"></p>
+          <button class="button button-dark" id="quiz-next" disabled>
+            Choose an answer
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home">
+      <span class="brand-icon">F</span> FLEX FITNESS
+    </a>
+    <p>A math project exploring linear relationships and direct variation.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
+
+<!--Note: NOT AI! Made by Selim Ahmed Hussein for grade 9a :)!!! please give grade A+-->
