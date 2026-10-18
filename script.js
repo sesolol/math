@@ -54,7 +54,7 @@ document.querySelectorAll(".choose-plan").forEach(button => {
   });
 });
 
-// Draw the graph on a canvas.
+
 function drawGraph() {
   const canvas = document.getElementById("cost-graph");
   const rect = canvas.getBoundingClientRect();
@@ -193,7 +193,7 @@ document.getElementById("reset-graph").addEventListener("click", () => {
 
 window.addEventListener("resize", drawGraph);
 
-// Knowledge quiz.
+
 const questions = [
   {
     question: "Starter costs $20 upfront and $15 per month. Which equation represents its total cost?",
@@ -216,7 +216,7 @@ const questions = [
   {
     question: "Starter costs y = 15x + 20. Unlimited costs y = 25x. When are their costs equal?",
     answers: ["2 months", "4 months", "10 months"],
-    correct: 1,
+    correct: 0,
     explanation: "Set the equations equal: 15x + 20 = 25x. Then 20 = 10x, so x = 2 months."
   }
 ];
